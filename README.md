@@ -31,5 +31,5 @@ To run any of the agents in this repo:
 
 1. **Clone the repo:**
    ```bash
-   git clone [https://github.com/Shuvo-75/ai-agent-marathon-2026.git](https://github.com/Shuvo-75/ai-agent-marathon-2026.git)
+   git clone https://github.com/Shuvo-75/ai-agent-marathon-2026.git
    cd ai-agent-marathon-2026
