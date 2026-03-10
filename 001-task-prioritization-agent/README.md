@@ -24,4 +24,4 @@
    ```powershell
    cd 001-task-prioritization-agent
 
-2. **Configure your tasks:** Open and edit the tasks.csv file with your specific tasks, deadlines (YYYY-MM-DD), and impact levels (low, medium, high).
+2. **Configure your tasks:** Open and edit the `tasks.csv` file with your specific tasks, deadlines (`YYYY-MM-DD`), and impact levels (`low`, `medium`, `high`).
