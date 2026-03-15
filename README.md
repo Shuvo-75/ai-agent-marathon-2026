@@ -20,7 +20,7 @@ The goal is to move beyond simple LLM prompts and build agents that can **reason
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **001** | Daily Task Prioritizer | Productivity | Python (Std Lib) | ✅ Done | [View Agent](./001-task-prioritization-agent) |
 | **002** | Email Summarizer | Communication | LLM + Python | ⏳ Pending | - |
-| **003** | Calendar Resolver | Scheduling | - | ⏳ Pending | - |
+| **003** | Calendar Resolver | Scheduling | Python (DateTime) | ✅ Done | [View Agent](./003-calendar-conflict-agent) |
 
 > *New agents added as the marathon continues!*
 
