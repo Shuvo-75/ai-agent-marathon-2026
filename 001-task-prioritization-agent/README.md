@@ -26,8 +26,22 @@
 
 2. **Configure your tasks:** Open and edit the `tasks.csv` file with your specific tasks, deadlines (`YYYY-MM-DD`), and impact levels (`low`, `medium`, `high`).
 
-### 3. Execute the Agent
-Run the script using the following command in your terminal:
+3. **Execute the Agent:**
+   Run the script using the following command in your terminal:
+   ```powershell
+   python agent.py
 
-```powershell
-python agent.py
+4. **Review your Plan:**
+   Check the output files to see your prioritized schedule:
+   * **`plan.txt`**: Human-readable view of your schedule.
+   * **`plan.json`**: Raw data for automation or further processing.
+
+   ## ⚙️ Scoring Logic
+The agent utilizes a deterministic scoring algorithm to eliminate decision fatigue and prioritize high-value tasks:
+
+$$Score = (Urgency \times 2.0) + (Importance \times 3.0) + QuickWin - BlockedPenalty$$
+
+* **Urgency:** Higher weight for tasks with closer deadlines or overdue status.
+* **Importance:** Scaled based on impact level (**High = 3**, **Medium = 2**, **Low = 1**).
+* **Quick Win:** **1.0 point bonus** for tasks requiring $\leq 15$ minutes of effort.
+* **Blocked Penalty:** **-5.0 point penalty** for tasks marked as 'blocked', pushing them to the bottom of the list until resolved.
